@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desencriptador de Texto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <section class="container__global">
+        <div class="container__input">
+            <img src="./asset/logo alura.jpg" alt="candado" id="logo-alura">
+            <h1>Encriptador de texto</h1>
+            <p> Escribe el texto que deseas encriptar o desencriptar<br>! Solo letras minusculas y sin acentos</p>
+            <input type="text" id="input-texto" placeholder="Ingrese texto a encriptar aqui" min="1" max="10">
+            
+            <div class="container__button">
+                <button id="button-encriptar" onclick="encriptar()" class="botones">Encriptar</button>
+                <button id="button-desencriptar" onclick="desencriptar()" class="botones">Desencriptar</button>
+                <!-- <button id="button-ocultar" onclick="ocultarDiv()" class="botones">ocultar</button> -->
+            </div>
+        </div>
+
+        <div class="container__AreaTexto"  id="section-encriptar">
+            <div class="container__imagen">
+                <img src="./asset/investigador.png" alt="candado" id="imagen-investigador" >
+            </div>
+            <textarea name="" id="textArea" class="texto__encriptado"></textarea>
+            <div class="container__button">
+                <button id="button-copiar" onclick="copiar()" class="botones">Copiar</button>
+                <button id="button-limpiar" onclick="limpiar()" class="botones">limpiar</button>
+            </div>
+        </div>
+    </section>
+   <footer>
+    <p><strong>Jhon Trujillo @2024</strong></p>
+   </footer>
+          
+    
+
+    <script src="./js/encriptar.js"></script>
+
+</body>
+</html>

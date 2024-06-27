@@ -1,0 +1,164 @@
+  /* padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     */
+
+/* estilos al body */
+body{
+    background: gray; /*fondo body*/
+    display: flex; 
+    flex-direction: column; /* en columna .container__global y footer*/
+    align-items: center; /* centrar .container__global y footer */
+}
+
+/* estilos al section .container */
+.container__global {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    height: 80vh;
+    background: #088395;
+    border-radius: 15PX;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px 10px #071952;
+} 
+
+/* estilos Div */
+ .container__input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    border-radius: 15PX;
+    width: 100%;
+    height: 50vh;
+    box-shadow: 0px 0px 20px 10px #37B7C3;
+    text-align: center;
+}
+
+/* estilos y posicion de logo alura */
+#logo-alura{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+/* Estilos al input */
+.container__input input{
+     align-items: center;
+     width: 98%;
+    height: 50%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Estilos div .container__button */
+.container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Estilos div .container__AreaTexto */
+ .container__AreaTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    width: 40%;
+    height: 50vh;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 20px 10px #37B7C3;
+ } 
+
+ /* estilos display - para mostrar y ocultar desde javaScript */
+ #sectionsection-encriptar, #imagen-investigador{
+    display: block;
+ }
+
+/* estilos display - para ocultar y mostrar desde javaScript */
+ #textArea, #button-copiar, #button-limpiar, #textarea{
+    display: none;
+ }
+
+ /* Estilos al textarea */
+.texto__encriptado{
+    height: 30vh;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+/* Estilos al dic contenedor de la imagen investigador */
+.container__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /* Tamaño a la imagen investigador */
+ .container__imagen img{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+ }
+
+ /* Estilos Generales para los botones  */
+.botones{
+    background: #071952;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: antiquewhite;
+}
+
+/* hover a los botones */
+.botones:hover{
+    background: #37B7C3;
+    color: black;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+/* Estilos a footer */
+footer {
+    width: 80%;
+    height: 8vh;
+    text-align: center;
+    background: #088395;
+    border-radius: 15PX;
+    box-shadow: 0px 0px 20px 10px #071952;
+} 
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+    .container__global{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+     .container__input,  .container__AreaTexto {
+        width: 100%;
+        height: 50vh;
+    }  
+    .container__button{
+        gap: 5px;
+        padding: 0;
+    }
+    #logo-alura{
+        width: 40px;
+        height: 40px;
+    }
+}     
+ 
+  
